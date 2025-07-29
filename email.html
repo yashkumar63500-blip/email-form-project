@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Validation Form</title>
+    <link rel="stylesheet" href="email.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Email Validation Form</h2>
+        <form id="emailForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+            <label for="email">Enter your email:</label>
+            <input type="text" id="email" name="email" placeholder="example@gmail.com" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+    
+            <div class="checkbox-container">
+                <input type="checkbox" id="togglePassword">
+                <label for="togglePassword">Show Password</label>
+            </div>
+    
+            <span id="error-message" class="error-message"></span>
+    
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="button" id="clearBtn">Clear</button>
+            </div>
+        </form>
+    </div>
+    
+    
+    <script src="email.js"></script>
+</body>
+</html>
